@@ -15,6 +15,7 @@ public class ServiceRecordResponse {
             Long id,
             LocalDate serviceDate,
             String description,
+
             LocalDate nextServiceDue,
             boolean overdue,
             Long vehicleId
@@ -42,6 +43,7 @@ public class ServiceRecordResponse {
     public LocalDate getNextServiceDue() {
         return nextServiceDue;
     }
+
 
     public boolean isOverdue() {
         return overdue;

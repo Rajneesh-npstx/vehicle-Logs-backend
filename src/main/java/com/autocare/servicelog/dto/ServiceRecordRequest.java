@@ -11,17 +11,21 @@ public class ServiceRecordRequest {
     private LocalDate serviceDate;
 
     @NotBlank(message = "Description is required")
+
     private String description;
 
     @NotNull(message = "Next service due date is required")
     private LocalDate nextServiceDue;
 
+
     @NotNull(message = "Vehicle ID is required")
     private Long vehicleId;
+
 
     public LocalDate getServiceDate() {
         return serviceDate;
     }
+
 
     public void setServiceDate(LocalDate serviceDate) {
         this.serviceDate = serviceDate;
