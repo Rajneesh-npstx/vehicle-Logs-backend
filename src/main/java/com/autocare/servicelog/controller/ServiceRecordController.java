@@ -31,6 +31,7 @@ public class ServiceRecordController {
                 .status(HttpStatus.CREATED)
                 .body(
                         serviceRecordService.createServiceRecord(request)
+
                 );
     }
 
